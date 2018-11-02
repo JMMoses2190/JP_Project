@@ -1,5 +1,5 @@
 /**
- * Step one and three of JP_Project
+ * Step one
  * By Jordan Moses
  */
 
@@ -13,8 +13,6 @@ public interface Item {
   int setProductionNumber(int productionNumber);
   void setName(String name);
   String getName();
-
-  //Step 3
   Date getManufactureDate();
   int getSerialNumber();
   void setManufacturer(String m);

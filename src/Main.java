@@ -2,7 +2,7 @@
  * test code
  * by Jordan Moses
  */
-
+import java.util.Date;
 
 public class Main {
 
@@ -13,19 +13,24 @@ public class Main {
       Widget w2 = new Widget("Widget 2");
       System.out.println(w2.toString());
 
-      for (ItemType it : ItemType.values()) {
-        System.out.println(it + " " + it.code);
-      }
+
 
     }
-
-  }
 
   class Widget extends Product {
+      public Widget(String name) {
+        super(name);
+      }
 
-    public Widget(String name) {
-      super(name);
-    }
+      @Override
+    public Date getManufactureDate() {
+        return null;
+      }
 
+      @Override
+    public void setManufacturer(String manufacturer){
+
+      }
+  }
   }
 
