@@ -1,6 +1,5 @@
 /**
- * Step one
- * By Jordan Moses
+ * Step one By Jordan Moses
  */
 
 import java.util.Date;
@@ -8,12 +7,17 @@ import java.util.Date;
 public interface Item {
 
   //Step 1
-  final String msnufacturer = "OracleProduction";
+  final String manufacturer = "OracleProduction";
 
-  int setProductionNumber(int productionNumber);
-  void setName(String name);
-  String getName();
-  Date getManufactureDate();
-  int getSerialNumber();
-  void setManufacturer(String m);
+  public void setProductionNumber(int productionNumber);
+
+  public void setName(String name);
+
+  public String getName();
+
+  public Date getManufactureDate();
+
+  public int getSerialNumber();
+
+  public void setManufacturer(String m);
 }

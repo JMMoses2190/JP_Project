@@ -1,6 +1,5 @@
 /**
- * Step two of JP_Project
- * By Jordan Moses
+ * Step two of JP_Project By Jordan Moses.
  */
 
 public enum ItemType {
@@ -11,13 +10,13 @@ public enum ItemType {
   Audio_Mobile("AM"),
   Visual_Mobile("VM");
 
-  private final String code;
+  public final String code;
 
-  ItemType(String code){
+  ItemType(String code) {
     this.code = code;
   }
 
-  private String getCode(){
+  public String getCode() {
     return code;
   }
 }
